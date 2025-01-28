@@ -34,12 +34,13 @@ namespace CollectionsMasterConsoleUI
             /*  1) First way, using a custom method => Hint: Array._____(); 
                 2) Second way, Create a custom method (scroll to bottom of page to find ⬇⬇⬇)
             */
-            Array.Reverse(numbers); // - did both ways commented out this one to use just 1 below
+            
             
             Console.WriteLine("All Numbers Reversed:");
-
+            
             Console.WriteLine("---------REVERSE CUSTOM------------");
-
+            Array.Reverse(numbers);
+            NumberPrinter(numbers);// had to add this after Mia pointed out that this was not printing to console 
             Console.WriteLine("-------------------");
 
             //TODO: Create a method that will set numbers that are a multiple of 3 to zero then print to the console all numbers
@@ -178,7 +179,7 @@ namespace CollectionsMasterConsoleUI
 
         private static void ReverseArray(int[] array)
         {
-            int begin = 0;
+            /*int begin = 0;
             int end = array.Length - 1;
 
             while (begin < end) // need to swap elements, had to look up online this process
@@ -189,7 +190,7 @@ namespace CollectionsMasterConsoleUI
                 
                 begin++;
                 end--;
-            }
+            }*/
         }
 
         /// <summary>
